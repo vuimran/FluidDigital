@@ -61,7 +61,7 @@ class Fixer extends Template
                         $link_tag = '';
                         $link_tag .= '<link rel="alternate" hreflang="';
                         $link_tag .= $store_language;
-                        $link_tag .= '" href="' . $this->getCurrentPageUrl() . $pageData['identifier'] . '" />';
+                        $link_tag .= '" href="' . $this->getStoreBaseUrl() . $pageData['identifier'] . '" />';
                         echo $link_tag;
 
                     }
